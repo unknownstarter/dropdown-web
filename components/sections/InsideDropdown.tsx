@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ExternalLink, Command } from "lucide-react";
+import { ChevronDown, ExternalLink, Command, Activity } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { trackEvent } from "@/lib/analytics";
 
@@ -57,17 +57,34 @@ export default function InsideDropdown() {
                             className="absolute top-full left-0 right-0 bg-[#222] border border-t-0 border-white/5 rounded-b-2xl overflow-hidden shadow-2xl backdrop-blur-xl"
                         >
                             <div className="p-2 space-y-2">
-                                {/* Product 1: Milkyway */}
+                                {/* Product 1: Milkyway iOS */}
                                 <ProductCard
-                                    title="milkyway"
+                                    title="milkyway (iOS)"
                                     desc="A place where thoughts meet."
                                     icon={<Command className="w-4 h-4" />}
                                     active={true}
                                     link="https://apps.apple.com/kr/app/milkyway-%EC%B1%85%EC%97%90%EC%84%9C-%EB%B0%9C%EA%B2%AC%ED%95%9C-%EC%A7%80%EC%A0%81%EC%9D%B8-%EB%82%98%EB%A5%BC-%EB%A9%94%EB%AA%A8%ED%95%B4%EC%9A%94/id6741465148"
-                                    note="2026년 상반기 중 배포 예정 (Android)"
                                 />
 
-                                {/* Product 2: Coming Soon */}
+                                {/* Product 2: Milkyway Android */}
+                                <ProductCard
+                                    title="milkyway (Android)"
+                                    desc="A place where thoughts meet."
+                                    icon={<Command className="w-4 h-4" />}
+                                    active={true}
+                                    link="https://play.google.com/store/apps/details?id=com.whatif.milkyway.android&hl=ko"
+                                />
+
+                                {/* Product 3: Vibe Semantic */}
+                                <ProductCard
+                                    title="Vibe Semantic"
+                                    desc="Your Product's Data Analyst AI Agent"
+                                    icon={<Activity className="w-4 h-4" />}
+                                    active={true}
+                                    link="https://www.vibesemantic.xyz/"
+                                />
+
+                                {/* Product 4: Coming Soon */}
                                 <ProductCard
                                     title="???"
                                     desc="Hidden potential."

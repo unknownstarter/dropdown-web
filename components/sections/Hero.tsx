@@ -17,6 +17,11 @@ export default function Hero() {
         window.open("https://apps.apple.com/kr/app/milkyway-%EC%B1%85%EC%97%90%EC%84%9C-%EB%B0%9C%EA%B2%AC%ED%95%9C-%EC%A7%80%EC%A0%81%EC%9D%B8-%EB%82%98%EB%A5%BC-%EB%A9%94%EB%AA%A8%ED%95%B4%EC%9A%94/id6741465148", "_blank");
     };
 
+    const visitVibeSemantic = () => {
+        trackEvent("cta_click", { cta: "visit_vibesemantic" });
+        window.open("https://www.vibesemantic.xyz/", "_blank");
+    };
+
     return (
         <section className="h-screen flex flex-col items-center justify-center px-6 relative snap-start">
             {/* Ambient Background Effect */}
@@ -68,7 +73,14 @@ export default function Hero() {
                         onClick={visitMilkyway}
                         className="w-full bg-white/10 border border-white/10 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-white/20 transition-colors backdrop-blur-sm"
                     >
-                        Visit milkyway
+                        Visit milkyway (iOS)
+                    </button>
+
+                    <button
+                        onClick={visitVibeSemantic}
+                        className="w-full bg-white/10 border border-white/10 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-white/20 transition-colors backdrop-blur-sm"
+                    >
+                        Visit Vibe Semantic
                     </button>
                 </div>
             </motion.div>
