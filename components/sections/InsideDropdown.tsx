@@ -50,11 +50,11 @@ export default function InsideDropdown() {
                 <AnimatePresence>
                     {isOpen && (
                         <motion.div
-                            initial={{ opacity: 0, height: 0, y: -10 }}
-                            animate={{ opacity: 1, height: "auto", y: 0 }}
-                            exit={{ opacity: 0, height: 0, y: -10 }}
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
-                            className="absolute top-full left-0 right-0 bg-[#222] border border-t-0 border-white/5 rounded-b-2xl overflow-hidden shadow-2xl backdrop-blur-xl"
+                            className="bg-[#222] border border-t-0 border-white/5 rounded-b-2xl overflow-hidden shadow-2xl backdrop-blur-xl"
                         >
                             <div className="p-2 space-y-2">
                                 {/* Product 1: Milkyway iOS */}
