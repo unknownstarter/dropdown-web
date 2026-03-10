@@ -56,17 +56,7 @@ export default function TermsPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-white/80 font-medium mb-2">제6조 (결제 및 환불)</h2>
-                    <ul className="list-disc pl-5 space-y-1">
-                        <li>유료 서비스의 결제는 회사가 제공하는 결제 수단을 통해 이루어집니다.</li>
-                        <li>환불은 관련 법령 및 회사의 환불 정책에 따라 처리됩니다.</li>
-                        <li>디지털 콘텐츠의 경우 콘텐츠를 이용하기 전에는 구매일로부터 7일 이내에 환불을 요청할 수 있습니다.</li>
-                        <li>환불 요청은 hello@dropdown.xyz로 문의해 주시기 바랍니다.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2 className="text-white/80 font-medium mb-2">제7조 (이용자의 의무)</h2>
+                    <h2 className="text-white/80 font-medium mb-2">제6조 (이용자의 의무)</h2>
                     <ul className="list-disc pl-5 space-y-1">
                         <li>이용자는 관련 법령, 이 약관의 규정, 이용 안내 등 회사가 통지하는 사항을 준수하여야 합니다.</li>
                         <li>이용자는 회사의 서비스를 이용하여 불법적인 행위를 하여서는 안 됩니다.</li>
@@ -75,7 +65,7 @@ export default function TermsPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-white/80 font-medium mb-2">제8조 (회사의 의무)</h2>
+                    <h2 className="text-white/80 font-medium mb-2">제7조 (회사의 의무)</h2>
                     <ul className="list-disc pl-5 space-y-1">
                         <li>회사는 관련 법령과 이 약관이 금지하거나 미풍양속에 반하는 행위를 하지 않으며, 계속적이고 안정적으로 서비스를 제공하기 위해 노력합니다.</li>
                         <li>회사는 이용자의 개인정보를 보호하기 위해 보안 시스템을 구축하며 개인정보처리방침을 준수합니다.</li>
@@ -83,12 +73,12 @@ export default function TermsPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-white/80 font-medium mb-2">제9조 (서비스의 중단)</h2>
+                    <h2 className="text-white/80 font-medium mb-2">제8조 (서비스의 중단)</h2>
                     <p>회사는 시스템 점검, 교체 및 고장, 통신 두절 등의 사유가 발생한 경우 서비스의 제공을 일시적으로 중단할 수 있습니다.</p>
                 </section>
 
                 <section>
-                    <h2 className="text-white/80 font-medium mb-2">제10조 (면책 조항)</h2>
+                    <h2 className="text-white/80 font-medium mb-2">제9조 (면책 조항)</h2>
                     <ul className="list-disc pl-5 space-y-1">
                         <li>회사는 천재지변 또는 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 책임이 면제됩니다.</li>
                         <li>회사는 이용자의 귀책 사유로 인한 서비스 이용 장애에 대하여 책임을 지지 않습니다.</li>
@@ -96,7 +86,7 @@ export default function TermsPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-white/80 font-medium mb-2">제11조 (분쟁 해결)</h2>
+                    <h2 className="text-white/80 font-medium mb-2">제10조 (분쟁 해결)</h2>
                     <p>이 약관에 관한 분쟁은 대한민국 법률에 따라 해결하며, 회사의 본사 소재지를 관할하는 법원을 전속적 관할 법원으로 합니다.</p>
                 </section>
             </div>
