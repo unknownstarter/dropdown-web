@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
 
 export default function Footer() {
@@ -12,6 +13,10 @@ export default function Footer() {
             <div className="flex justify-center gap-6">
                 <a href="https://www.threads.net/@whatif_multiverse" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors" onClick={() => handleSocialClick("threads")}>Threads</a>
                 <a href="mailto:whatif.milkyway.dev@gmail.com" className="hover:text-white/60 transition-colors" onClick={() => handleSocialClick("email")}>Email</a>
+            </div>
+            <div className="flex justify-center gap-4">
+                <Link href="/privacy" className="hover:text-white/60 transition-colors">개인정보처리방침</Link>
+                <Link href="/terms" className="hover:text-white/60 transition-colors">이용약관</Link>
             </div>
             <p>© {new Date().getFullYear()} Dropdown</p>
             <div className="mt-4 text-white/20 text-[10px] leading-relaxed space-y-0.5">
