@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ExternalLink, Command, Activity } from "lucide-react";
+import { ChevronDown, ExternalLink, Command, Activity, Sparkles, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { trackEvent } from "@/lib/analytics";
 
@@ -84,7 +84,35 @@ export default function InsideDropdown() {
                                     link="https://www.vibesemantic.xyz/"
                                 />
 
-                                {/* Product 4: Coming Soon */}
+                                {/* Product 4: momo (App) */}
+                                <ProductCard
+                                    title="momo (App)"
+                                    desc="Every fated bond has a reason."
+                                    icon={<Sparkles className="w-4 h-4" />}
+                                    active={true}
+                                    link="https://apps.apple.com/kr/app/momo-%EB%AA%A8%EB%93%A0-%EC%9D%B8%EC%97%B0%EC%97%94-%EC%9D%B4%EC%9C%A0%EA%B0%80-%EC%9E%88%EB%8B%A4/id6760338547"
+                                    note="Google Play 심사 중 (Android)"
+                                />
+
+                                {/* Product 5: momo (Web) */}
+                                <ProductCard
+                                    title="momo (Web)"
+                                    desc="Read your fate. Match with friends."
+                                    icon={<Sparkles className="w-4 h-4" />}
+                                    active={true}
+                                    link="https://fatemomo.xyz"
+                                />
+
+                                {/* Product 6: Fan to Pro */}
+                                <ProductCard
+                                    title="Fan to Pro"
+                                    desc="From K-culture passion to global career."
+                                    icon={<GraduationCap className="w-4 h-4" />}
+                                    active={true}
+                                    link="https://growthcareer.xyz"
+                                />
+
+                                {/* Product 7: Coming Soon */}
                                 <ProductCard
                                     title="???"
                                     desc="Hidden potential."
