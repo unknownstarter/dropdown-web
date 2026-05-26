@@ -88,35 +88,35 @@ export default function Hero() {
                         onClick={visitMilkyway}
                         className="w-full bg-white/10 border border-white/10 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-white/20 transition-colors backdrop-blur-sm"
                     >
-                        Visit milkyway (iOS)
+                        milkyway (iOS)
                     </button>
 
                     <button
                         onClick={visitVibeSemantic}
                         className="w-full bg-white/10 border border-white/10 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-white/20 transition-colors backdrop-blur-sm"
                     >
-                        Visit Vibe Semantic
+                        Vibe Semantic
                     </button>
 
                     <button
                         onClick={visitMomoApp}
                         className="w-full bg-white/10 border border-white/10 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-white/20 transition-colors backdrop-blur-sm"
                     >
-                        Visit momo (iOS)
+                        momo (iOS)
                     </button>
 
                     <button
                         onClick={visitMomoWeb}
                         className="w-full bg-white/10 border border-white/10 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-white/20 transition-colors backdrop-blur-sm"
                     >
-                        Visit momo (Web)
+                        momo (Web)
                     </button>
 
                     <button
                         onClick={visitFanToPro}
                         className="w-full bg-white/10 border border-white/10 text-white px-6 py-3 rounded-full font-medium text-sm hover:bg-white/20 transition-colors backdrop-blur-sm"
                     >
-                        Visit Fan to Pro
+                        Fan to Pro
                     </button>
                 </div>
             </motion.div>
