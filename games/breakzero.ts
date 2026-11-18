@@ -5,6 +5,7 @@ const game: GameFile = {
     origin: "https://breakzero.vercel.app",
     langs: {
         ko: "",
+        en: "/en",
     },
     card: {
         title: "BREAK ZERO (Game)",
@@ -14,7 +15,9 @@ const game: GameFile = {
     footerLabel: "BREAK ZERO",
     llms: {
         title: "BREAK ZERO: Seoul Mage Defense",
-        path: "",
+        path: "/en",
+        summary:
+            "free mobile action game for Android and iPhone. A crack opens in the sky over Seoul and an office worker on the way home fights off monsters with magic. 2-minute runs, 12 spells that evolve three times, auto battle.",
     },
 };
 
