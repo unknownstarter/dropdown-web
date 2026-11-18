@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ExternalLink, Command, Activity, Sparkles, GraduationCap } from "lucide-react";
+import { ChevronDown, ExternalLink, Command, Activity, Sparkles, GraduationCap, Sprout, Gamepad2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { trackEvent } from "@/lib/analytics";
 
@@ -112,7 +112,25 @@ export default function InsideDropdown() {
                                     link="https://growthcareer.xyz"
                                 />
 
-                                {/* Product 7: Coming Soon */}
+                                {/* Game 1: Dear */}
+                                <ProductCard
+                                    title="Dear (Game)"
+                                    desc="Raise a baby fawn on a little island."
+                                    icon={<Sprout className="w-4 h-4" />}
+                                    active={true}
+                                    link="/game/dear"
+                                />
+
+                                {/* Game 2: TILTDOWN */}
+                                <ProductCard
+                                    title="TILTDOWN (Game)"
+                                    desc="100 jellies, one start line."
+                                    icon={<Gamepad2 className="w-4 h-4" />}
+                                    active={true}
+                                    link="https://tiltdown.vercel.app"
+                                />
+
+                                {/* Coming Soon */}
                                 <ProductCard
                                     title="???"
                                     desc="Hidden potential."
