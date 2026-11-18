@@ -1,13 +1,17 @@
 "use client";
 
-import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ExternalLink, Command, Activity, Sparkles, GraduationCap, Sprout, Gamepad2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { trackEvent } from "@/lib/analytics";
 
-export default function InsideDropdown() {
-    const [isOpen, setIsOpen] = useState(false);
+export default function InsideDropdown({
+    isOpen,
+    setIsOpen,
+}: {
+    isOpen: boolean;
+    setIsOpen: (open: boolean) => void;
+}) {
 
     const toggleOpen = () => {
         const newState = !isOpen;
