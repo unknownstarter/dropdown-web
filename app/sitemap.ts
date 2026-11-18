@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: SITE, changeFrequency: "monthly", priority: 1 },
     { url: `${SITE}/game/dear`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE}/game/breakzero`, changeFrequency: "weekly", priority: 0.8 },
     ...Object.values(TILTDOWN_LANGS).map((path) => ({
       url: tiltdown + path,
       changeFrequency: "weekly" as const,

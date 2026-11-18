@@ -130,6 +130,15 @@ export default function InsideDropdown() {
                                     link="/game/tiltdown"
                                 />
 
+                                {/* Game 3: BREAK ZERO */}
+                                <ProductCard
+                                    title="BREAK ZERO (Game)"
+                                    desc="Breaking news! A BREAK hits Seoul."
+                                    icon={<Gamepad2 className="w-4 h-4" />}
+                                    active={true}
+                                    link="/game/breakzero"
+                                />
+
                                 {/* Coming Soon */}
                                 <ProductCard
                                     title="???"

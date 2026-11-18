@@ -4,6 +4,7 @@ import type { NextConfig } from "next";
 const GAMES: Record<string, string> = {
   dear: "https://dear-island.vercel.app",
   tiltdown: "https://tiltdown.vercel.app",
+  breakzero: "https://breakzero.vercel.app",
 };
 
 const nextConfig: NextConfig = {
