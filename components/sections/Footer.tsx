@@ -14,6 +14,12 @@ export default function Footer() {
                 <a href="https://www.threads.net/@whatif_multiverse" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 transition-colors" onClick={() => handleSocialClick("threads")}>Threads</a>
                 <a href="mailto:whatif.milkyway.dev@gmail.com" className="hover:text-white/60 transition-colors" onClick={() => handleSocialClick("email")}>Email</a>
             </div>
+            {/* Plain links so search engines can reach the game pages (the product list above is collapsed until opened). */}
+            <nav aria-label="Games" className="flex justify-center gap-4">
+                <a href="/game/dear" className="hover:text-white/60 transition-colors">Dear</a>
+                <a href="/game/tiltdown" className="hover:text-white/60 transition-colors">TILTDOWN</a>
+                <a href="/game/breakzero" className="hover:text-white/60 transition-colors">BREAK ZERO</a>
+            </nav>
             <div className="flex justify-center gap-4">
                 <Link href="/privacy" className="hover:text-white/60 transition-colors">개인정보처리방침</Link>
                 <Link href="/terms" className="hover:text-white/60 transition-colors">이용약관</Link>
