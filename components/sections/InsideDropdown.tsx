@@ -1,9 +1,11 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ExternalLink, Command, Activity, Sparkles, GraduationCap, Sprout, Gamepad2 } from "lucide-react";
+import { ChevronDown, ExternalLink, Command, Activity, Sparkles, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { trackEvent } from "@/lib/analytics";
+import { games } from "@/lib/games";
+import { GAME_ICONS } from "@/lib/game-icons";
 
 export default function InsideDropdown({
     isOpen,
@@ -116,32 +118,20 @@ export default function InsideDropdown({
                                     link="https://growthcareer.xyz"
                                 />
 
-                                {/* Game 1: Dear */}
-                                <ProductCard
-                                    title="Dear (Game)"
-                                    desc="Raise a baby fawn on a little island."
-                                    icon={<Sprout className="w-4 h-4" />}
-                                    active={true}
-                                    link="/game/dear"
-                                />
-
-                                {/* Game 2: TILTDOWN */}
-                                <ProductCard
-                                    title="TILTDOWN (Game)"
-                                    desc="100 jellies, one start line."
-                                    icon={<Gamepad2 className="w-4 h-4" />}
-                                    active={true}
-                                    link="/game/tiltdown"
-                                />
-
-                                {/* Game 3: BREAK ZERO */}
-                                <ProductCard
-                                    title="BREAK ZERO (Game)"
-                                    desc="Breaking news! A BREAK hits Seoul."
-                                    icon={<Gamepad2 className="w-4 h-4" />}
-                                    active={true}
-                                    link="/game/breakzero"
-                                />
+                                {/* Games: one card per file in games/ */}
+                                {games.map((game) => {
+                                    const Icon = GAME_ICONS[game.card.icon];
+                                    return (
+                                        <ProductCard
+                                            key={game.name}
+                                            title={game.card.title}
+                                            desc={game.card.desc}
+                                            icon={<Icon className="w-4 h-4" />}
+                                            active={true}
+                                            link={`/game/${game.name}`}
+                                        />
+                                    );
+                                })}
 
                                 {/* Coming Soon */}
                                 <ProductCard

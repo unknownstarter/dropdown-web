@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { trackEvent } from "@/lib/analytics";
+import { games } from "@/lib/games";
 
 export default function Footer() {
     const handleSocialClick = (platform: string) => {
@@ -16,9 +17,9 @@ export default function Footer() {
             </div>
             {/* Plain links so search engines can reach the game pages (the product list above is collapsed until opened). */}
             <nav aria-label="Games" className="flex justify-center gap-4">
-                <a href="/game/dear" className="hover:text-white/60 transition-colors">Dear</a>
-                <a href="/game/tiltdown" className="hover:text-white/60 transition-colors">TILTDOWN</a>
-                <a href="/game/breakzero" className="hover:text-white/60 transition-colors">BREAK ZERO</a>
+                {games.map((game) => (
+                    <a key={game.name} href={`/game/${game.name}`} className="hover:text-white/60 transition-colors">{game.footerLabel}</a>
+                ))}
             </nav>
             <div className="flex justify-center gap-4">
                 <Link href="/privacy" className="hover:text-white/60 transition-colors">개인정보처리방침</Link>
