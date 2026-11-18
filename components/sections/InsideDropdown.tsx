@@ -127,7 +127,7 @@ export default function InsideDropdown() {
                                     desc="100 jellies, one start line."
                                     icon={<Gamepad2 className="w-4 h-4" />}
                                     active={true}
-                                    link="https://tiltdown.vercel.app"
+                                    link="/game/tiltdown"
                                 />
 
                                 {/* Coming Soon */}
